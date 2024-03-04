@@ -53,7 +53,7 @@ return {
 		dependencies = {
 			{
 				"nvim-telescope/telescope-fzf-native.nvim",
-				build = "make",
+				build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build",
 			},
 			"nvim-telescope/telescope-file-browser.nvim",
 		},
@@ -73,7 +73,7 @@ return {
 					local builtin = require("telescope.builtin")
 					builtin.find_files({
 						no_ignore = false,
-						hidden = true,
+						hidden = false,
 					})
 				end,
 				desc = "Lists files in your current working directory, respects .gitignore",
