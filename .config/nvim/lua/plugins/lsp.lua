@@ -6,13 +6,16 @@ return {
 			vim.list_extend(opts.ensure_installed, {
 				"stylua",
 				"selene",
-				"luacheck",
+				-- "luacheck",
 				"shellcheck",
 				"shfmt",
 				"tailwindcss-language-server",
 				"typescript-language-server",
 				"css-lsp",
+				"html-lsp",
 				"emmet-language-server",
+				-- "docker-compose-language-server",
+				"dockerfile-language-server"
 			})
 		end,
 	},

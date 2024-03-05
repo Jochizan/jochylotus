@@ -90,7 +90,7 @@ return {
 				window = { suffix = "" },
 				quickfix = { suffix = "" },
 				yank = { suffix = "" },
-				-- treesitter = { suffix = "n" },
+				treesitter = { suffix = "n" },
 			})
 		end,
 	},
