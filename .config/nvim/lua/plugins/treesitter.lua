@@ -4,7 +4,7 @@ return {
 	{
 		"nvim-treesitter/nvim-treesitter",
 		opts = {
-			-- build = ":TSUpdate",
+			build = ":TSUpdate",
 			ensure_installed = {
 				"astro",
 				"cmake",

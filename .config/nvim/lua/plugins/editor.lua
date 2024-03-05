@@ -73,7 +73,7 @@ return {
 					local builtin = require("telescope.builtin")
 					builtin.find_files({
 						no_ignore = false,
-						hidden = false,
+						hidden = true,
 					})
 				end,
 				desc = "Lists files in your current working directory, respects .gitignore",
@@ -206,7 +206,7 @@ return {
 				},
 			}
 			telescope.setup(opts)
-			require("telescope").load_extension("fzf")
+			-- require("telescope").load_extension("fzf")
 			require("telescope").load_extension("file_browser")
 		end,
 	},
